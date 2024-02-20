@@ -1,0 +1,105 @@
+---
+---
+<div class="portadaHomePage">
+
+    <div class="sectionYear">
+        <div class="linneSectionYear"></div>
+        <div class="VariebleYear">2024</div>
+    </div>
+
+    <h1 class="titlePortadaHomePage" >Little Bit Of Everything</h1>
+    <video class="view-to-play" id="CoverHomePageVideo" muted playsinline loop>
+        <source src="https://res.cloudinary.com/dbxohjdng/video/upload/v1708450091/jcuxekmcz9yw7hltjrhk.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <div class="textureCoverHomePage"></div>
+    <div class="textureCoverHomePage_1"></div>
+    <div class="textureCoverHomePage_2"></div>
+    <script>
+        var myVideo = document.getElementById('CoverHomePageVideo');
+         myVideo.play();
+    </script>
+</div>
+
+
+<!-- /videos/polska.mp4 -->
+<style>
+
+    .textureCoverHomePage, .textureCoverHomePage_1, .textureCoverHomePage_2{
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        z-index: 1;
+    }
+    .textureCoverHomePage{
+        background-image: url(./texture/Gradient.png);
+        z-index: 1;
+        background-size: cover;
+    }
+    .textureCoverHomePage_1{
+        background-image: url(./texture/riso_texture.png);
+        z-index: 1;
+    }
+    .textureCoverHomePage_2{
+        background-image: url(./texture/Noise.png);
+        z-index: 2;
+    }
+
+
+    .titlePortadaHomePage{
+        font-family: 'Dirtyline';
+        color: white;
+        position: absolute;
+        z-index: 12;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .portadaHomePage {
+        width: 100%;
+        height: 50vh;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .view-to-play {
+        min-width: 20%;
+        width: 500px;
+        max-width: 94%;
+        height: auto;
+        z-index: 2;
+        border-radius: 1rem;
+    }
+    .VariebleYear {
+        font-family: "Dirtyline";
+        width: fit-content;
+    }
+
+    .linneSectionYear {
+        height: 2px;
+        border-radius: 1rem;
+        width: -webkit-fill-available;
+        background: white;
+    }
+
+    .sectionYear {
+        width: 100%;
+        height: 24px;
+        z-index: 11;
+        position: absolute;
+        color: white;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        padding: 0.8rem;
+        gap: 8px;
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: auto;
+    }
+</style>
